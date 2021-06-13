@@ -7,7 +7,7 @@ import javax.persistence.Table
 import javax.validation.constraints.*
 
 
-@Table(name="VoucherApplications")
+@Table(name="VOUCHE_APPLICATIONS")
 data class VoucherApplication(
 
         @NotEmpty
