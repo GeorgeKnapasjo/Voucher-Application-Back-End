@@ -3,6 +3,7 @@ package com.example.Voucher.database.domain
 
 
 import java.time.LocalDate
+import javax.annotation.Generated
 import javax.persistence.Entity
 import javax.persistence.Id
 import javax.persistence.Table
@@ -14,7 +15,7 @@ import javax.validation.constraints.*
 data class VoucherApplication(
 
         @Id
-        val id: Int?,
+        val id: Int,
 
         @NotEmpty
         val firstName: String,
@@ -23,7 +24,7 @@ data class VoucherApplication(
         val lastName: String,
 
 
-        val dateOfBirth: LocalDate?,
+//        val dateOfBirth: LocalDate?,
 
         @Min(18)
         val age: Int,
