@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class VoucherController(val service: VoucherService) {
 
-    @GetMapping
+    @GetMapping("/Vouchers")
     fun getVouchers(): List<VoucherApplication> = service.getApplications()
 
     @PostMapping("/Vouchers")
